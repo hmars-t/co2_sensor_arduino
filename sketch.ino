@@ -6,7 +6,7 @@
 #define PIN 5 // Hier wird angegeben, an welchem digitalen Pin die WS2812 LEDs bzw. NeoPixel angeschlossen sind
 #define NUMPIXELS 12 // Hier wird die Anzahl der angeschlossenen WS2812 LEDs bzw. NeoPixel angegeben
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
-SoftwareSerial sensor(10, 11);
+SoftwareSerial sensor(10, 11); // RX, TX
 
 int pause_time = 5000; // 100 Millisekunden Pause bis zur Ansteuerung der nächsten LED.
 const long samplePeriod = 5000L;
